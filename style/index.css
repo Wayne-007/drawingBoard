@@ -1,0 +1,69 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* 使用本地图片 */
+  background-image: url('https://images.unsplash.com/photo-1765466441202-76252154d4fc?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  /* 假设你把图片放在 assets 目录下 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  display: block;
+  border: 1px solid #ccc;
+  margin: 24px auto;
+  background-color: white;
+  border-radius: 12px; /* 添加圆角 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+  transition: all 0.3s ease; /* 添加过渡动画 */
+}
+
+canvas:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* 悬停时阴影加深 */
+}
